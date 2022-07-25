@@ -146,7 +146,6 @@ function angleBetweenClockHands(date) {
   } else {
     toRadian = angle;
   }
-  console.log(angle);
   return Math.abs((Math.PI * toRadian) / 180);
 }
 
