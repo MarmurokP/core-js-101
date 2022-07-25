@@ -139,12 +139,12 @@ function angleBetweenClockHands(date) {
   }
   ms %= 3600000;
   const minutes = Math.floor(ms / 60000);
-  const angle = 0.5 * (60 * hours - 11 * minutes);
+  const arrowsAngle = 0.5 * (60 * hours - 11 * minutes);
   let toRadian = 0;
-  if (angle > 180) {
-    toRadian = 360 - angle;
+  if (arrowsAngle > 180) {
+    toRadian = 360 - arrowsAngle;
   } else {
-    toRadian = angle;
+    toRadian = arrowsAngle;
   }
   return Math.abs((Math.PI * toRadian) / 180);
 }
